@@ -1,0 +1,14 @@
+/* todo Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav a.active {
+  color: rgb(35, 190, 10);
+  border: 1px solid rgb(35, 190, 10);
+  border-radius: 8px;
+
+}
