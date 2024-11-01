@@ -1,11 +1,15 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigation } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Spinner from "./components/Spinner";
 
 const App = () => {
+  const navigation = useNavigation()
   return (
     <>
       <Navbar />
-      <Outlet />
+      {
+        navigation.state === "loading" ? <Spinner /> : <Outlet />
+      }
     </>
   );
 };

@@ -1,5 +1,4 @@
-import PropTypes from "prop-types";
-import { FaRegStar } from "react-icons/fa";
+import { PropTypes, FaRegStar } from "../Hook/Hook"
 
 const Book = ({ book }) => {
     const { bookName, author, image, rating, category } = book
@@ -17,7 +16,7 @@ const Book = ({ book }) => {
                 <p className="font-semibold text-color-primary/80">{author}</p>
                 <div className="flex justify-between">
                     <p>{category}</p>
-                    <p className="flex gap-4">{rating} <FaRegStar /></p>
+                    <p className="flex gap-4 items-center">{rating} <FaRegStar /></p>
                 </div>
             </div>
         </div>
